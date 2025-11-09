@@ -41,14 +41,6 @@ def build_mappings(groups, techniques, relationships):
                 technique_to_groups[target].append(source)
     return group_to_techniques, technique_to_groups
 
-#def group_techniques(techniques):
-#    group_name = input("Enter a valid group name: \n")
-#    if group_name not in groups:
-#        print("Invalid group name...\n")
-#    elif group_name == :
-#        print()
-    #elif group_name == ""
-
 def get_mitre_id(obj):
     for ref in obj.get('external_references',[]):
         if ref.get('source_name') == "mitre-attack":
@@ -151,4 +143,5 @@ def cli_tool():
             print("Unknown command... \n")
 
 if __name__ == "__main__":
+
     cli_tool()
